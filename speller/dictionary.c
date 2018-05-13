@@ -24,10 +24,11 @@ int totalNoOfWords = 0;
 int hashKeyIndex(const char *word)
 {
     char firstChar = tolower(word[0]);//convert all cases to lower while calculating the index.
-    return firstChar - 'a';
+    return firstChar - 'a';//returns ASCII value which will be used to place the letter in a bucket in hash table.
 }
 
 // Returns true if word is in dictionary else false
+//compares a word in text file with dictionary.
 bool check(const char *word)
 {
     // TODO
