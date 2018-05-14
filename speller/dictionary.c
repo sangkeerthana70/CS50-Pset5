@@ -33,7 +33,7 @@ bool check(const char *word)
 {
     // TODO
     //compare text words against the dictinary words
-    int bucketNumber =  hashKeyIndex(word);//finding the bucket from the hash function in which the word is located and getting the head of the node pointer.
+    int bucketNumber =  hashKeyIndex(word);//finding the bucket from the hash table in which the word is located and getting the head of the node pointer.
     if (hashtable[bucketNumber] == NULL)
     {
         return false;
@@ -108,5 +108,17 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    return false;
+    for (int i = 0; i < 26; i++)
+    {
+        //int bucketNumber =  hashKeyIndex(word);
+        node * cursor = hashtable[i];//cursor points to the very first word(node) in the Linked list.
+        while (cursor != NULL)
+        {
+            node *nextNode = cursor;//nextNode pointer initially pointing to cursor which is the head or the current node.
+            cursor = cursor-> next;//moves the cursor to the next node.
+            free(nextNode);//free the temp node
+        }
+
+    }
+    return true;
 }
