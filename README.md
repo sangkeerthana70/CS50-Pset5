@@ -9,3 +9,5 @@ PSet 3 - https://github.com/sangkeerthana70/CS50-Pset3/tree/master/music
 PSet 4 - https://github.com/sangkeerthana70/CS50-Pset4
 
 PSet 5 - https://github.com/sangkeerthana70/CS50-Pset5/tree/master/speller
+
+Pset 6 - https://github.com/sangkeerthana70/CS50-Pset6
